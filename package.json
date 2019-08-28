@@ -1,0 +1,41 @@
+{
+  "name": "leave-manager",
+  "version": "1.0.0",
+  "description": "Apply for leave, approve leave requests, view your leave applications, monitor leave applications, analyze leave cost",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets env", 
+    "release": "npm run clean && npm run build && npm run serve", 
+    "clean": "rm -rf dist && mkdir dist", 
+    "build": "babel . -s -D -d dist --presets env --ignore node_modules", 
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrememisaac/leave-manager.git"
+  },
+  "keywords": [
+    "Leave/Paid Time Off Application",
+    "Leave/Paid Time Off Processing",
+    "Leave/Paid Time Off Approval",
+    "Leave/Paid Time Off Administration",
+    "Leave/Paid Time Off Analysis",
+    "Leave/Paid Time Off Monitoring",
+    "Leave/Paid Time Off Alerts"
+  ],
+  "author": "Emem Isaac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrememisaac/leave-manager/issues"
+  },
+  "homepage": "https://github.com/mrememisaac/leave-manager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.1"
+  }
+}
