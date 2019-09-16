@@ -4,10 +4,10 @@
   "description": "Apply for leave, approve leave requests, view your leave applications, monitor leave applications, analyze leave cost",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node --presets env", 
-    "release": "npm run clean && npm run build && npm run serve", 
-    "clean": "rm -rf dist && mkdir dist", 
-    "build": "babel . -s -D -d dist --presets env --ignore node_modules", 
+    "start": "nodemon server.js --exec babel-node --presets env",
+    "release": "npm run clean && npm run build && npm run serve",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "babel . -s -D -d dist --presets env --ignore node_modules",
     "serve": "node dist/server.js"
   },
   "repository": {
@@ -34,7 +34,8 @@
     "mongoose": "^5.6.11"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "babel-preset-env": "^1.7.0",
     "nodemon": "^1.19.1"
   }
